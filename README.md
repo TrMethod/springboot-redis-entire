@@ -2,8 +2,22 @@
   springboot+springbootjpa+redis
   
 
-需求：
+0.使用redisTemple
+添加依赖
+``
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+``
+自动注入redisTemple
+
+在test包里面车市RedisTemplate的功能
+
 1.序列化可以阅读     y
+
+
+
 2.用RedisTemplate操作redis    y
 3.用注解的方式               
 4.页面增删改查,分页，简单搜索
@@ -11,7 +25,7 @@
 
 
 
-springsession实现共享session
+6.springsession实现共享session
    第一步  加依赖
             
              <!-- https://mvnrepository.com/artifact/org.springframework.session/spring-session-data-redis -->

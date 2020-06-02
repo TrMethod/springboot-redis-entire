@@ -17,11 +17,12 @@ import java.net.UnknownHostException;
  */
 @Configuration
 public class RedisConfig {
+
     /**
-     * 这个可以序列化 任何对象
-     * @param redisConnectionFactory
-     * @return
-     * @throws UnknownHostException
+     *
+     * @param redisConnectionFactory 连接工厂
+     * @return redisTemple
+     * @throws UnknownHostException 未知主机异常
      */
     @Bean
     public RedisTemplate<Object, Object> myRedisTemplate(

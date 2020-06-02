@@ -25,11 +25,9 @@ public class User implements Serializable {
     private String password;
     @Column(length = 32)
     private String level;
-    public User(String id,String name){
-        this.id=id;
-        this.name=name;
+
+    public User() {
     }
-    public User(){
-        super();
-    }
+
+
 }
